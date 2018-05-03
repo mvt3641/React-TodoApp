@@ -24,7 +24,7 @@ var App = React.createClass({
 var TodoComponent = React.createClass({
     getInitialState: function(){
         return {
-            todos: ['wash up', 'eat some cheese', 'take a nap']
+            todos: ['Walk Dog', 'Work out', 'take a nap']
         }
     }, //getInitialState
     render: function(){
@@ -35,7 +35,7 @@ var TodoComponent = React.createClass({
         return(
             <div id="todo-list">
             <Link to={'/about'}>About</Link>
-                <p>The busiest people have the most leisure...</p>
+                <p>These tasks are not going to do themselves!!</p>
                 <ul>{todos}</ul>
                 <AddItem onAdd={this.onAdd}/>
             </div>
